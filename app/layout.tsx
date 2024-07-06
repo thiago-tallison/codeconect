@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Prompt } from "next/font/google";
 import "./globals.css";
+import { Aside } from "./components/aside";
+import { Pesquisar } from "./components/pesquisar";
+import 'highlight.js/styles/atom-one-dark.min.css'
 
-const inter = Inter({ subsets: ["latin"] });
+const prompt = Prompt({
+  weight: ["600", "500", "400", "300"],
+  fallback: ["sans"],
+  subsets: ["latin"]
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +22,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-br">
+      <body className={prompt.className + ' min-h-screen min-w-screen flex justify-center'} style={{
+        background: 'linear-gradient(180deg, #0E1112 0%, #00090E 100%)'
+      }}>
+        <div className="py-14 gap-7 w-full max-w-[1200px] px-14 flex flex-col md:flex-row">
+          <Aside />
+          <main className="flex flex-col flex-1 mt-9 md:mt-0">
+            <Pesquisar />
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
   );
 }
