@@ -4,7 +4,7 @@ type AvatarProps = {
   name: string
 }
 
-export const Avatar = ({ imageLink, name }: AvatarProps) => {
+const Avatar = ({ imageLink, name }: AvatarProps) => {
   return (
     <div className='flex items-center gap-2'>
       <Image
@@ -20,3 +20,5 @@ export const Avatar = ({ imageLink, name }: AvatarProps) => {
     </div>
   )
 }
+
+export default Avatar

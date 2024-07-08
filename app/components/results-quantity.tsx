@@ -3,10 +3,7 @@ type QuantityResultsType = {
   searchTerm: string
 }
 
-export const QuantityResults = ({
-  quantity,
-  searchTerm,
-}: QuantityResultsType) => {
+const QuantityResults = ({ quantity, searchTerm }: QuantityResultsType) => {
   if (!searchTerm || searchTerm === "") return null
 
   return (
@@ -15,3 +12,5 @@ export const QuantityResults = ({
     </div>
   )
 }
+
+export default QuantityResults

@@ -1,4 +1,4 @@
-import { Post } from "@/app/components/post"
+import Post from "@/app/components/post"
 import { PostType } from "@/app/page"
 import { remark } from "remark"
 import { rehype } from "rehype"
@@ -6,8 +6,8 @@ import rehypeHighlight from "rehype-highlight"
 import html from "remark-html"
 import rehypeStringify from "rehype-stringify"
 import styles from "./styles.module.css"
-import { LinkHomePage } from "@/app/components/link-home-page"
-import { CommentsSection } from "@/app/components/coments"
+import LinkHomePage from "@/app/components/link-home-page"
+import CommentsSection from "@/app/components/coments"
 import db from "@/prisma/db"
 import { logger } from "@/logger"
 import { redirect } from "next/navigation"
@@ -40,7 +40,7 @@ const getPost = async (slug: string) => {
   }
 }
 
-export const PostDetails = async ({ params }: { params: { slug: string } }) => {
+const PostDetails = async ({ params }: { params: { slug: string } }) => {
   const { slug } = params
   const post = await getPost(slug)
 

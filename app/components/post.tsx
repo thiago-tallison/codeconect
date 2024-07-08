@@ -1,9 +1,9 @@
 import Image from "next/image"
-import { Profile } from "./profile"
+import Profile from "./profile"
 import { PostType } from "../page"
 import Link from "next/link"
 
-export const Post = (props: PostType) => {
+const Post = (props: PostType) => {
   const { author, body, cover, markdown, slug, title } = props
 
   return (
@@ -33,3 +33,5 @@ export const Post = (props: PostType) => {
     </li>
   )
 }
+
+export default Post

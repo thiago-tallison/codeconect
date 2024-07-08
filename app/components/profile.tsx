@@ -4,7 +4,7 @@ type ProfileProps = {
   name: string
   image: string
 }
-export const Profile = ({ name, image }: ProfileProps) => {
+const Profile = ({ name, image }: ProfileProps) => {
   return (
     <div className='flex gap-2 items-center justify-end mt-10 px-4 pb-6'>
       <Image
@@ -20,3 +20,5 @@ export const Profile = ({ name, image }: ProfileProps) => {
     </div>
   )
 }
+
+export default Profile

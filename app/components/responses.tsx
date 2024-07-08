@@ -2,14 +2,14 @@
 
 import { useState } from "react"
 import { ShowLessCommentsButton, ShowMoreCommentsButton } from "./comment"
-import { Response, ResponseType } from "./response"
+import Response, { ResponseType } from "./response"
 
 export type ResponsesType = {
   answersCount?: number
   responses: ResponseType[]
 }
 
-export const Responses = ({ responses }: ResponsesType) => {
+const Responses = ({ responses }: ResponsesType) => {
   const [answersCount, setAnswersCount] = useState(0)
 
   if (responses.length === 0) return null
@@ -26,3 +26,5 @@ export const Responses = ({ responses }: ResponsesType) => {
     </div>
   )
 }
+
+export default Responses

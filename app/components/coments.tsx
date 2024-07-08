@@ -1,6 +1,6 @@
 import { Comment } from "./comment"
 
-export const CommentsSection = () => {
+const CommentsSection = () => {
   return (
     <section className='bg-[#888888] mt-10 p-8'>
       <h4 className='text-[#171D1F] text-[22px] font-semibold mb-6'>
@@ -27,3 +27,5 @@ export const CommentsSection = () => {
     </section>
   )
 }
+
+export default CommentsSection

@@ -1,9 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { Avatar } from "./avatar"
-import { Response } from "./response"
-import { Responses } from "./responses"
+import Avatar from "./avatar"
+import Responses from "./responses"
 
 export type CommentType = {
   author: {

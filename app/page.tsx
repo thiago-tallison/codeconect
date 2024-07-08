@@ -1,11 +1,11 @@
 import { logger } from "@/logger"
-import { Post } from "./components/post"
+import Post from "./components/post"
 import Link from "next/link"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import db from "../prisma/db"
 import { Suspense } from "react"
 import Loading from "./loading"
-import { QuantityResults } from "./components/results-quantity"
+import QuantityResults from "./components/results-quantity"
 
 type AuthorType = {
   id: number

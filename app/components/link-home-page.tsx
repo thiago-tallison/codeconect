@@ -1,7 +1,7 @@
 import { ChevronLeft } from "lucide-react"
 import Link from "next/link"
 
-export const LinkHomePage = () => {
+const LinkHomePage = () => {
   return (
     <Link
       href='/'
@@ -12,3 +12,5 @@ export const LinkHomePage = () => {
     </Link>
   )
 }
+
+export default LinkHomePage

@@ -1,23 +1,12 @@
 "use client"
 
-import {
-  AlertCircle,
-  AlertCircleIcon,
-  File,
-  Icon,
-  LogOut,
-  LucideUserCircle2,
-  UserCircle,
-  UserCircle2,
-  UserCircle2Icon,
-  icons,
-} from "lucide-react"
+import { AlertCircle, File, LogOut, UserCircle } from "lucide-react"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import classNames from "classnames"
 import Link from "next/link"
 
-export const Aside = () => {
+const Aside = () => {
   const pathname = usePathname()
 
   const links = [
@@ -94,3 +83,4 @@ export const Aside = () => {
     </div>
   )
 }
+export default Aside

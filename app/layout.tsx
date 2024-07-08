@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { Prompt } from "next/font/google"
 import "./globals.css"
-import { Aside } from "./components/aside"
-import { Pesquisar } from "./components/pesquisar"
+import Aside from "./components/aside"
+import Pesquisar from "./components/pesquisar"
 import "highlight.js/styles/atom-one-dark.min.css"
 
 const prompt = Prompt({
