@@ -18,7 +18,7 @@ model User {
   name String
   username String @unique
   avatar String
-  psot Post[]
+  posts Post[]
 }
 
 model Post {
