@@ -40,9 +40,7 @@ const getPost = async (slug: string) => {
   }
 }
 
-export const PostDetails: React.FC<{ params: { slug: string } }> = async ({
-  params,
-}) => {
+export const PostDetails = async ({ params }: { params: { slug: string } }) => {
   const { slug } = params
   const post = await getPost(slug)
 

@@ -5,7 +5,7 @@ import { usePathname, useSearchParams, useRouter } from "next/navigation"
 import { FormEvent, useCallback, useRef } from "react"
 import { QuantityResults } from "./results-quantity"
 
-export const Pesquisar: React.FC = () => {
+export const Pesquisar = () => {
   const inputRef = useRef<HTMLInputElement>(null)
   const router = useRouter()
   const pathname = usePathname()
